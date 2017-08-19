@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 
 import { store } from './conf'
 import Button from './components/Button'
+import TestSnackbar from './components/TestSnackbar'
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import injectTapEventPlugin from 'react-tap-event-plugin'
@@ -15,7 +16,7 @@ const App = function()
     return (
         <MuiThemeProvider>
             <Provider store={store}>
-                <Button >Karl</Button>
+                <TestSnackbar >Karl</TestSnackbar>
             </Provider>
         </MuiThemeProvider>
     )
